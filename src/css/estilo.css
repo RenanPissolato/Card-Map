@@ -1,0 +1,118 @@
+body {
+    font-family: 'Outfit', sans-serif;
+    background-image: url(../img/Fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    gap: 15px;
+}
+
+.cabecalho .titulo {
+    color: #f1ecff;
+}
+
+.cabecalho .milenio {
+    width: 45px;
+    height: 45px;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 0;
+    gap: 200px;
+    position: relative;
+}
+
+.list-monsters{
+    width: 310px;
+    height: 520px;
+    position: relative;   
+}
+
+.btn-seta {
+    background-color: #f1ecff ;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.btn-seta.btn-voltar {
+    transform: rotateY(180deg);
+}
+
+.btn-seta:hover {
+    background-color: #6f5e9c ;
+}
+
+.car-monster{
+    opacity: 0;
+    height: 100%;
+    position: absolute;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.car-monster.select{
+    opacity: 1;
+    z-index: 1;
+}
+
+.card{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --bs-card-bg: #bd9f38;
+    width: 25rem;
+    right: 75px;
+} 
+
+.card-body {
+    background-color: rgba(198, 210, 73, 0.7)
+}
+
+.card-title {
+    background-color: rgba(235, 228, 181, 0.2);
+    border-bottom-right-radius : 9px;
+}
+.card-text{
+    background-color: rgba(235, 228, 181, 0.2);
+    border-bottom-right-radius : 9px;
+}
+.card-text-1{
+    padding: 5px;
+    background-color: rgba(235, 228, 181, 0.2);
+    border-bottom-right-radius : 9px;
+    font-weight: bold
+}
+.list-group-item  {
+    background-color: rgba(235, 228, 181, 0.3);
+    font-size: 17px;
+    text-align: justify;
+    overflow-y:auto ;
+    max-height: 200px;
+    overflow-y: auto;
+}
+::-webkit-scrollbar {
+    background-color: rgba(198, 210, 73, 0.7);
+    width: 8px;
+    border-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #bd9f38;
+    border-radius: 5px;
+}
+.list-group-item-2 {
+    background-color: rgba(235, 228, 181, 0.3);
+}
